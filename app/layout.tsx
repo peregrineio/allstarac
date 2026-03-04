@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MetaPixel } from "@/components/analytics/MetaPixel";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { ChatWidget } from "@/components/chat/ChatWidget";
 
 const bebasNeue = Bebas_Neue({
   variable: "--font-heading",
@@ -76,6 +77,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content" className="pb-20 md:pb-0">{children}</main>
         <Footer />
+        <ChatWidget />
         {process.env.NEXT_PUBLIC_GA_ID && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         )}

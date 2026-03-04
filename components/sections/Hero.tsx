@@ -125,12 +125,12 @@ export function Hero() {
             </motion.div>
           </div>
 
-          {/* Right Column — Temperature Gauge Visual */}
+          {/* Right Column — Temperature Gauge Visual (hidden on mobile) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="order-1 lg:order-2 flex justify-center lg:justify-end"
+            className="hidden lg:flex order-1 lg:order-2 justify-center lg:justify-end"
           >
             <div className="relative">
               {/* Temperature gauge container */}

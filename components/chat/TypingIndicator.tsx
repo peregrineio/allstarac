@@ -1,0 +1,29 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+export function TypingIndicator() {
+  return (
+    <div className="flex justify-start">
+      <div className="bg-white border border-gray-200 rounded-[12px] rounded-bl-[4px] px-4 py-3">
+        <div className="flex items-center gap-1">
+          {[0, 1, 2].map((index) => (
+            <motion.span
+              key={index}
+              className="w-2 h-2 bg-gray-400 rounded-full"
+              animate={{
+                y: [0, -6, 0],
+              }}
+              transition={{
+                duration: 0.6,
+                repeat: Infinity,
+                delay: index * 0.15,
+                ease: "easeInOut",
+              }}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
