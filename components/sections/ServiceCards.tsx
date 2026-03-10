@@ -109,15 +109,15 @@ export function ServiceCards() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.1 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           {services.map((service) => (
             <motion.div key={service.href} variants={cardVariants}>
               <Link href={service.href} className="group block h-full">
-                <div className="relative h-full bg-white border-2 border-border hover:border-midnight p-8 transition-all duration-300 group-hover:shadow-[8px_8px_0px_0px_hsl(220,60%,8%)]">
+                <div className="relative h-full bg-white border-2 border-border hover:border-midnight active:border-midnight p-8 transition-all duration-300 group-hover:shadow-[8px_8px_0px_0px_hsl(220,60%,8%)] active:shadow-[4px_4px_0px_0px_hsl(220,60%,8%)]">
                   {/* Top accent line */}
-                  <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${service.accent} transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500`} />
+                  <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${service.accent} transform origin-left scale-x-0 max-md:scale-x-100 max-md:opacity-60 group-hover:scale-x-100 group-hover:opacity-100 transition-all duration-500`} />
 
                   <div className="flex items-start gap-6">
                     {/* Icon */}
@@ -131,7 +131,7 @@ export function ServiceCards() {
                         <h3 className="font-heading text-2xl md:text-3xl text-midnight">
                           {service.title}
                         </h3>
-                        <ArrowRight className="w-5 h-5 text-copper opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                        <ArrowRight className="w-5 h-5 text-copper opacity-0 max-md:opacity-50 max-md:translate-x-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
                       </div>
                       <p className="text-copper font-semibold text-sm uppercase tracking-wide mb-3">
                         {service.tagline}
@@ -144,7 +144,7 @@ export function ServiceCards() {
 
                   {/* Bottom corner accent */}
                   <div className="absolute bottom-0 right-0 w-12 h-12 overflow-hidden">
-                    <div className={`absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-br ${service.accent} opacity-0 group-hover:opacity-10 transition-opacity duration-300 transform rotate-45 translate-x-12 translate-y-12`} />
+                    <div className={`absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-br ${service.accent} opacity-0 max-md:opacity-5 group-hover:opacity-10 transition-opacity duration-300 transform rotate-45 translate-x-12 translate-y-12`} />
                   </div>
                 </div>
               </Link>

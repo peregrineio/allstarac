@@ -102,7 +102,7 @@ export default function AboutPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-white/70 text-lg max-w-2xl mx-auto"
           >
-            Leo and Gicela built Allstar on a simple belief: Houston homeowners
+            Allstar was built on a simple belief: Houston homeowners
             deserve honest HVAC service at a fair price.
           </motion.p>
         </div>
@@ -129,12 +129,12 @@ export default function AboutPage() {
 
               <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
                 <p>
-                  After years working in the HVAC industry, Leo saw the same
+                  After years working in the HVAC industry, we saw the same
                   problems over and over — hidden fees, aggressive upselling, and
                   homeowners who felt taken advantage of.
                 </p>
                 <p>
-                  In 2006, he and his wife Gicela started Allstar to do things differently.
+                  In 2006, we started Allstar to do things differently.
                   For nearly 20 years, we&apos;ve kept it simple: what we quote is what you pay.
                   We explain everything before we start. We never push services you don&apos;t need.
                 </p>
@@ -153,7 +153,7 @@ export default function AboutPage() {
               </div>
             </motion.div>
 
-            {/* Photo Placeholder */}
+            {/* Company Stats Card */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -161,15 +161,35 @@ export default function AboutPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-muted border-2 border-border flex flex-col items-center justify-center relative">
-                <Users className="w-20 h-20 text-steel/30 mb-4" />
-                <p className="text-muted-foreground text-sm uppercase tracking-wider">
-                  Leo & Gicela — Photo Coming Soon
-                </p>
-
+              <div className="bg-midnight p-8 md:p-10 relative">
                 {/* Corner accents */}
                 <div className="absolute -bottom-3 -right-3 w-20 h-20 border-b-4 border-r-4 border-copper" />
                 <div className="absolute -top-3 -left-3 w-20 h-20 border-t-4 border-l-4 border-copper" />
+
+                <h3 className="font-heading text-2xl text-white mb-8">By the Numbers</h3>
+
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="font-heading text-4xl md:text-5xl text-copper">19+</div>
+                    <div className="text-white/60 text-sm uppercase tracking-wider mt-1">Years in Business</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-heading text-4xl md:text-5xl text-copper">24/7</div>
+                    <div className="text-white/60 text-sm uppercase tracking-wider mt-1">Emergency Service</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-heading text-4xl md:text-5xl text-copper">20+</div>
+                    <div className="text-white/60 text-sm uppercase tracking-wider mt-1">Cities Served</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-heading text-4xl md:text-5xl text-copper">A+</div>
+                    <div className="text-white/60 text-sm uppercase tracking-wider mt-1">BBB Rating</div>
+                  </div>
+                </div>
+
+                <div className="mt-8 pt-6 border-t border-white/20 text-center">
+                  <p className="text-white/80 font-body text-sm">Family-owned &amp; operated since 2006</p>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -291,8 +311,8 @@ export default function AboutPage() {
             </div>
 
             <div className="pt-6 border-t border-white/30">
-              <p className="text-white font-semibold text-lg">— Leo & Gicela</p>
-              <p className="text-white/70 text-sm">Owners, Allstar AC & Heating</p>
+              <p className="text-white font-semibold text-lg">— The Allstar Family</p>
+              <p className="text-white/70 text-sm">Family-Owned Since 2006</p>
             </div>
           </motion.div>
         </div>

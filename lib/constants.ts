@@ -20,6 +20,7 @@ export const COMPANY = {
 // ===== SERVICE AREAS =====
 export const SERVICE_AREAS = {
   cities: [
+    // Original 7
     { name: "Clear Lake", slug: "clear-lake", hasPage: true },
     { name: "Friendswood", slug: "friendswood", hasPage: true },
     { name: "Webster", slug: "webster", hasPage: true },
@@ -27,9 +28,24 @@ export const SERVICE_AREAS = {
     { name: "Tomball", slug: "tomball", hasPage: true },
     { name: "Humble", slug: "humble", hasPage: true },
     { name: "Spring", slug: "spring", hasPage: true },
+    // New 13
+    { name: "Pearland", slug: "pearland", hasPage: true },
+    { name: "Pasadena", slug: "pasadena", hasPage: true },
+    { name: "Deer Park", slug: "deer-park", hasPage: true },
+    { name: "La Porte", slug: "la-porte", hasPage: true },
+    { name: "Galena Park", slug: "galena-park", hasPage: true },
+    { name: "Fresno", slug: "fresno", hasPage: true },
+    { name: "Rosharon", slug: "rosharon", hasPage: true },
+    { name: "Dickinson", slug: "dickinson", hasPage: true },
+    { name: "Texas City", slug: "texas-city", hasPage: true },
+    { name: "Seabrook", slug: "seabrook", hasPage: true },
+    { name: "La Marque", slug: "la-marque", hasPage: true },
+    { name: "Hitchcock", slug: "hitchcock", hasPage: true },
+    { name: "San Leon", slug: "san-leon", hasPage: true },
   ],
   additionalAreas: [
-    "Texas City", "San Leon", "South Houston", "Pasadena", "Pearland"
+    "South Houston", "Channelview", "Baytown", "Manvel", "Alvin",
+    "Santa Fe", "Kemah", "Nassau Bay", "Morgan's Point", "Galveston"
   ],
 } as const;
 
@@ -102,6 +118,22 @@ export const NAV_ITEMS = [
       { label: "Friendswood", href: "/service-areas/friendswood" },
       { label: "Webster", href: "/service-areas/webster" },
       { label: "League City", href: "/service-areas/league-city" },
+      { label: "Tomball", href: "/service-areas/tomball" },
+      { label: "Humble", href: "/service-areas/humble" },
+      { label: "Spring", href: "/service-areas/spring" },
+      { label: "Pearland", href: "/service-areas/pearland" },
+      { label: "Pasadena", href: "/service-areas/pasadena" },
+      { label: "Deer Park", href: "/service-areas/deer-park" },
+      { label: "La Porte", href: "/service-areas/la-porte" },
+      { label: "Galena Park", href: "/service-areas/galena-park" },
+      { label: "Fresno", href: "/service-areas/fresno" },
+      { label: "Rosharon", href: "/service-areas/rosharon" },
+      { label: "Dickinson", href: "/service-areas/dickinson" },
+      { label: "Texas City", href: "/service-areas/texas-city" },
+      { label: "Seabrook", href: "/service-areas/seabrook" },
+      { label: "La Marque", href: "/service-areas/la-marque" },
+      { label: "Hitchcock", href: "/service-areas/hitchcock" },
+      { label: "San Leon", href: "/service-areas/san-leon" },
     ],
   },
   { label: "Financing", href: "/financing" },

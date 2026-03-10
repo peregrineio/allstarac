@@ -7,7 +7,10 @@ import { MapPin, ArrowRight, Phone } from "lucide-react";
 const areas = [
   { name: "Clear Lake", href: "/service-areas/clear-lake", tagline: "NASA Area" },
   { name: "Friendswood", href: "/service-areas/friendswood", tagline: "Family Community" },
+  { name: "Webster", href: "/service-areas/webster", tagline: "Bay Area" },
   { name: "League City", href: "/service-areas/league-city", tagline: "South Houston" },
+  { name: "Pearland", href: "/service-areas/pearland", tagline: "Brazoria County" },
+  { name: "Pasadena", href: "/service-areas/pasadena", tagline: "East Houston" },
   { name: "Tomball", href: "/service-areas/tomball", tagline: "North Houston" },
   { name: "Humble", href: "/service-areas/humble", tagline: "Atascocita Area" },
   { name: "Spring", href: "/service-areas/spring", tagline: "Champions Area" },
@@ -81,13 +84,13 @@ export function ServiceAreasPreview() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, amount: 0.1 }}
           className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12"
         >
           {areas.map((area, index) => (
             <motion.div key={area.href} variants={itemVariants}>
               <Link href={area.href} className="group block">
-                <div className="relative bg-white border-2 border-border hover:border-midnight p-6 text-center transition-all duration-300 group-hover:shadow-[4px_4px_0px_0px_hsl(220,60%,8%)]">
+                <div className="relative bg-white border-2 border-border hover:border-midnight active:border-midnight p-6 text-center transition-all duration-300 group-hover:shadow-[4px_4px_0px_0px_hsl(220,60%,8%)] max-md:shadow-[2px_2px_0px_0px_hsl(220,60%,8%,0.2)] active:shadow-[2px_2px_0px_0px_hsl(220,60%,8%)]">
                   {/* Map pin icon */}
                   <div className="relative mx-auto w-12 h-12 mb-4">
                     <div className="absolute inset-0 bg-copper rounded-full transform scale-0 group-hover:scale-100 transition-transform duration-300" />
@@ -105,8 +108,8 @@ export function ServiceAreasPreview() {
                     {area.tagline}
                   </p>
 
-                  {/* Arrow on hover */}
-                  <div className="absolute bottom-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {/* Arrow on hover/mobile */}
+                  <div className="absolute bottom-2 right-2 opacity-0 max-md:opacity-50 group-hover:opacity-100 transition-opacity duration-300">
                     <ArrowRight className="w-4 h-4 text-copper" />
                   </div>
                 </div>
@@ -141,7 +144,7 @@ export function ServiceAreasPreview() {
               href="/service-areas"
               className="inline-flex items-center gap-2 font-heading text-lg text-copper hover:text-copper-light transition-colors group"
             >
-              View All 7 Service Areas
+              View All 20+ Service Areas
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

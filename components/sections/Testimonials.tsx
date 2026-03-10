@@ -91,7 +91,7 @@ export function Testimonials() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, amount: 0.1 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {testimonials.map((testimonial, index) => (
@@ -100,7 +100,7 @@ export function Testimonials() {
               variants={cardVariants}
               className="group relative"
             >
-              <div className="h-full bg-white border-2 border-border hover:border-midnight p-8 transition-all duration-300 group-hover:shadow-[6px_6px_0px_0px_hsl(220,60%,8%)]">
+              <div className="h-full bg-white border-2 border-border hover:border-midnight active:border-midnight p-8 transition-all duration-300 group-hover:shadow-[6px_6px_0px_0px_hsl(220,60%,8%)] max-md:shadow-[3px_3px_0px_0px_hsl(220,60%,8%,0.3)] active:shadow-[3px_3px_0px_0px_hsl(220,60%,8%)]">
                 {/* Quote icon */}
                 <Quote className="w-10 h-10 text-copper/20 mb-4" />
 

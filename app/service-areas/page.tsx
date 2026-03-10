@@ -6,6 +6,7 @@ import { MapPin, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const cities = [
+  // Original 7
   {
     name: "Clear Lake",
     slug: "clear-lake",
@@ -48,14 +49,98 @@ const cities = [
     tagline: "Champions Area",
     description: "Professional HVAC for Spring homes",
   },
+  // New 13
+  {
+    name: "Pearland",
+    slug: "pearland",
+    tagline: "Shadow Creek",
+    description: "Reliable HVAC service in Pearland",
+  },
+  {
+    name: "Pasadena",
+    slug: "pasadena",
+    tagline: "East Houston",
+    description: "Trusted HVAC for Pasadena homes",
+  },
+  {
+    name: "Deer Park",
+    slug: "deer-park",
+    tagline: "San Jacinto",
+    description: "Professional HVAC in Deer Park",
+  },
+  {
+    name: "La Porte",
+    slug: "la-porte",
+    tagline: "Sylvan Beach",
+    description: "HVAC service for La Porte homes",
+  },
+  {
+    name: "Galena Park",
+    slug: "galena-park",
+    tagline: "Ship Channel",
+    description: "Reliable HVAC in Galena Park",
+  },
+  {
+    name: "Fresno",
+    slug: "fresno",
+    tagline: "Fort Bend",
+    description: "Trusted HVAC service in Fresno",
+  },
+  {
+    name: "Rosharon",
+    slug: "rosharon",
+    tagline: "Brazoria County",
+    description: "Professional HVAC for Rosharon",
+  },
+  {
+    name: "Dickinson",
+    slug: "dickinson",
+    tagline: "Bayou Country",
+    description: "HVAC service for Dickinson homes",
+  },
+  {
+    name: "Texas City",
+    slug: "texas-city",
+    tagline: "Gulf Coast",
+    description: "Reliable HVAC in Texas City",
+  },
+  {
+    name: "Seabrook",
+    slug: "seabrook",
+    tagline: "Kemah Area",
+    description: "Trusted HVAC service in Seabrook",
+  },
+  {
+    name: "La Marque",
+    slug: "la-marque",
+    tagline: "Highland Bayou",
+    description: "Professional HVAC in La Marque",
+  },
+  {
+    name: "Hitchcock",
+    slug: "hitchcock",
+    tagline: "Galveston County",
+    description: "HVAC service for Hitchcock homes",
+  },
+  {
+    name: "San Leon",
+    slug: "san-leon",
+    tagline: "Bay Waterfront",
+    description: "Reliable HVAC in San Leon",
+  },
 ];
 
 const additionalAreas = [
-  "Texas City",
-  "San Leon",
   "South Houston",
-  "Pasadena",
-  "Pearland",
+  "Channelview",
+  "Baytown",
+  "Manvel",
+  "Alvin",
+  "Santa Fe",
+  "Kemah",
+  "Nassau Bay",
+  "Morgan's Point",
+  "Galveston",
 ];
 
 const containerVariants = {
